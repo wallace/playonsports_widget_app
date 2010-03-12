@@ -1,0 +1,28 @@
+<h1>Editing client</h1>
+
+<% form_for(@client) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :API %><br />
+    <%= f.text_field :API %>
+  </p>
+  <p>
+    <b>Branches: </b><br />
+    <% Branch.all.each do |branch| %>
+      <%= "#{branch.version} (currently: #{branch.widget.version})" %>
+      <%= check_box_tag branch.id, 1, @client.using?(branch),
+      :onclick => remote_function(:url => save_client_path(@client), :with => "'branch=#{branch.id}&amp;show=' + this.checked", :method => :post) %><br />
+    <% end %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @client %> |
+<%= link_to 'Back', clients_path %>

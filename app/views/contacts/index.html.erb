@@ -1,0 +1,35 @@
+
+<h1>Listing contacts</h1>
+
+<% form_for @search, :url => { :action => 'index' } do |f| %>
+  <%= f.collection_select :client_id_equals, Client.all, :id, :name, { :prompt => 'All Clients' } %>
+  <%= f.submit 'Filter' %> or <%= link_to 'Clear', contacts_path %>
+<% end %>
+<br />
+
+<table>
+  <tr>
+    <th>Client</th>
+    <th>Role</th>
+    <th>Name</th>
+    <th>Phone</th>
+    <th>Email</th>
+  </tr>
+
+<% @contacts.each do |contact| %>
+  <tr>
+    <td><%=link_to(h(contact.client.name), client_path(contact.client)) %></td>
+    <td><%=h contact.role %></td>
+    <td><%=h contact.name %></td>
+    <td><%=h contact.phone %></td>
+    <td><%=h contact.email %></td>
+    <td><%= link_to 'Show', contact %></td>
+    <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
+    <td><%= link_to 'Destroy', contact, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New contact', new_contact_path %>

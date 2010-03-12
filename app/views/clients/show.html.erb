@@ -1,0 +1,31 @@
+<p>
+  <b>Name:</b>
+  <%=h @client.name %>
+</p>
+
+<p>
+  <b>Api:</b>
+  <%=h @client.API %>
+</p>
+
+<p>
+  <b>Branches: </b><br />
+  <% Branch.all.each do |branch| %>
+    <%= "#{branch.version} (currently: #{branch.widget.version})" %>
+    <%= check_box_tag branch.id, 1, @client.using?(branch), :disabled => true %><br />
+  <% end %>
+</p>
+
+<p>
+<%= link_to 'Contacts', contacts_path(:search => { :client_id_equals => @client }) %>
+</p>
+
+<p>
+<b>Sample code:</b><br />
+  <% @client.sample_code.each do |branch| %>
+    <%= h branch %> <br />
+  <% end %>
+</p>
+
+<%= link_to 'Edit', edit_client_path(@client) %> |
+<%= link_to 'Back', clients_path %>

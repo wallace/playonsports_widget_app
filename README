@@ -1,0 +1,8 @@
+A sample app for PlayOnSports.
+
+The default username and password is admin / test.  
+
+I viewed branches as a weak entity relationship off of widgets.  Therefore,
+branches are created and deleted as needed based on widget version numbers.
+
+Please let me know if you have any questions.

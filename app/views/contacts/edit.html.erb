@@ -1,0 +1,32 @@
+<h1>Editing contact</h1>
+
+<% form_for(@contact) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :client_id %><br />
+    <%= f.select :client_id, Client.all.map {|c| [c.name, c.id]}, {} %>
+  </p>
+  <p>
+    <%= f.label :role %><br />
+    <%= f.text_field :role %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @contact %> |
+<%= link_to 'Back', contacts_path %>

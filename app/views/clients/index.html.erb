@@ -1,0 +1,37 @@
+<h1>Listing clients</h1>
+
+<% form_tag('/clients', :method=> :get) do %>
+  <select id='branch_id' name='branch_id'>
+    <%= options_for_select @branches.map {|b| [b.version, b.id] }.insert(0, ["Choose a branch", nil]) %>
+  </select>
+  <%= submit_tag 'Filter' %> or <%= link_to 'Clear', clients_path %>
+<% end -%>
+<br />
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Api</th>
+    <% @branches.each do |branch| %>
+      <th><%= "#{branch.version} (currently: #{branch.widget.version})" %> </th>
+    <% end %>
+  </tr>
+
+<% @clients.each do |client| %>
+<tr id=<%= "client_#{client.id}" %> style="display: table-row">
+    <td><%=h client.name %></td>
+    <td><%=h client.API %></td>
+    <% @branches.each do |branch| %>
+      <td><%= check_box_tag branch.id, 1, client.using?(branch),
+        :onclick => remote_function(:url => save_client_path(client), :with => "'branch=#{branch.id}&amp;show=' + this.checked", :method => :post) %></td>
+    <% end %>
+    <td><%= link_to 'Show', client %></td>
+    <td><%= link_to 'Edit', edit_client_path(client) %></td>
+    <td><%= link_to 'Destroy', client, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New client', new_client_path %>

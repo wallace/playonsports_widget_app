@@ -1,0 +1,387 @@
+  [4;36;1mBranch Load (0.3ms)[0m   [0;1mSELECT * FROM "branches" [0m
+  [4;35;1mWidget Load (0.2ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;36;1mBranch Load (0.3ms)[0m   [0;1mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;35;1mBranch Load (0.2ms)[0m   [0mSELECT "branches".id FROM "branches" WHERE ("branches"."major" = 1) LIMIT 1[0m
+  [4;36;1mBranch Load (0.1ms)[0m   [0;1mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;35;1mBranch Create (0.5ms)[0m   [0mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-11 15:11:36', '2010-03-11 15:11:36', 1, 1)[0m
+  [4;36;1mWidget Create (0.2ms)[0m   [0;1mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-11 15:11:36', 'testing', '2010-03-11 15:11:36', 1, '1.1.0')[0m
+  [4;35;1mBranch Load (0.3ms)[0m   [0mSELECT * FROM "branches" LIMIT 1[0m
+  [4;36;1mBranch Load (0.3ms)[0m   [0;1mSELECT * FROM "branches" LIMIT 1[0m
+  [4;36;1mBranch Load (0.2ms)[0m   [0;1mSELECT * FROM "branches" [0m
+  [4;35;1mWidget Load (0.2ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;36;1mBranch Load (0.1ms)[0m   [0;1mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT "branches".id FROM "branches" WHERE ("branches"."major" = 1) LIMIT 1[0m
+  [4;36;1mBranch Load (0.1ms)[0m   [0;1mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;35;1mBranch Create (0.5ms)[0m   [0mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-11 15:13:19', '2010-03-11 15:13:19', 1, 1)[0m
+  [4;36;1mWidget Create (0.2ms)[0m   [0;1mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-11 15:13:19', 'testing', '2010-03-11 15:13:19', 1, '1.1.0')[0m
+  [4;35;1mBranch Load (0.3ms)[0m   [0mSELECT * FROM "branches" LIMIT 1[0m
+  [4;36;1mBranch Load (0.3ms)[0m   [0;1mSELECT "branches".id FROM "branches" WHERE ("branches"."major" = 1) LIMIT 1[0m
+  [4;35;1mBranch Load (0.3ms)[0m   [0mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;36;1mBranch Create (0.5ms)[0m   [0;1mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-11 15:17:05', '2010-03-11 15:17:05', 1, 1)[0m
+  [4;35;1mBranch Load (0.3ms)[0m   [0mSELECT "branches".id FROM "branches" WHERE ("branches"."major" = 1) LIMIT 1[0m
+  [4;36;1mBranch Load (0.2ms)[0m   [0;1mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 2 AND "branches".major = 1) LIMIT 1[0m
+  [4;35;1mBranch Load (0.2ms)[0m   [0mSELECT * FROM "branches" [0m
+  [4;36;1mWidget Load (0.2ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;36;1mBranch Load (0.1ms)[0m   [0;1mSELECT "branches".id FROM "branches" WHERE ("branches"."major" = 1) LIMIT 1[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;36;1mBranch Create (0.4ms)[0m   [0;1mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-11 15:17:05', '2010-03-11 15:17:05', 1, 1)[0m
+  [4;35;1mWidget Create (0.3ms)[0m   [0mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-11 15:17:05', 'testing', '2010-03-11 15:17:05', 1, '1.1.0')[0m
+  [4;36;1mBranch Load (0.3ms)[0m   [0;1mSELECT * FROM "branches" LIMIT 1[0m
+  [4;36;1mBranch Load (0.3ms)[0m   [0;1mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;35;1mBranch Create (0.5ms)[0m   [0mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-11 15:19:40', '2010-03-11 15:19:40', 1, 1)[0m
+  [4;36;1mBranch Load (0.2ms)[0m   [0;1mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 2 AND "branches".major = 1) LIMIT 1[0m
+  [4;35;1mBranch Create (0.1ms)[0m   [0mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-11 15:19:40', '2010-03-11 15:19:40', 1, 2)[0m
+  [4;36;1mWidget Load (0.2ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;35;1mBranch Load (0.3ms)[0m   [0mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;36;1mWidget Create (0.3ms)[0m   [0;1mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-11 15:19:40', 'testing', '2010-03-11 15:19:40', 1, '1.1.0')[0m
+  [4;35;1mBranch Load (0.2ms)[0m   [0mSELECT * FROM "branches" [0m
+  [4;36;1mWidget Load (0.1ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;36;1mBranch Load (0.1ms)[0m   [0;1mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;35;1mBranch Create (0.4ms)[0m   [0mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-11 15:19:40', '2010-03-11 15:19:40', 1, 1)[0m
+  [4;36;1mWidget Create (0.2ms)[0m   [0;1mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-11 15:19:40', 'testing', '2010-03-11 15:19:40', 1, '1.1.0')[0m
+  [4;35;1mBranch Load (0.3ms)[0m   [0mSELECT * FROM "branches" LIMIT 1[0m
+  [4;36;1mBranch Load (0.3ms)[0m   [0;1mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;35;1mBranch Create (0.5ms)[0m   [0mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-11 15:20:35', '2010-03-11 15:20:35', 1, 1)[0m
+  [4;36;1mBranch Load (0.2ms)[0m   [0;1mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 2 AND "branches".major = 1) LIMIT 1[0m
+  [4;35;1mBranch Create (0.1ms)[0m   [0mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-11 15:20:35', '2010-03-11 15:20:35', 1, 2)[0m
+  [4;36;1mWidget Load (0.1ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;35;1mBranch Load (0.3ms)[0m   [0mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;36;1mWidget Create (0.2ms)[0m   [0;1mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-11 15:20:35', 'testing', '2010-03-11 15:20:35', 1, '1.1.0')[0m
+  [4;35;1mBranch Load (0.2ms)[0m   [0mSELECT * FROM "branches" [0m
+  [4;36;1mWidget Load (0.1ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;36;1mBranch Load (0.1ms)[0m   [0;1mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;35;1mBranch Create (0.3ms)[0m   [0mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-11 15:20:35', '2010-03-11 15:20:35', 1, 1)[0m
+  [4;36;1mWidget Create (0.1ms)[0m   [0;1mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-11 15:20:35', 'testing', '2010-03-11 15:20:35', 1, '1.1.0')[0m
+  [4;35;1mBranch Load (0.3ms)[0m   [0mSELECT * FROM "branches" LIMIT 1[0m
+  [4;36;1mBranch Load (0.3ms)[0m   [0;1mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;35;1mBranch Create (0.5ms)[0m   [0mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-11 15:23:16', '2010-03-11 15:23:16', 1, 1)[0m
+  [4;36;1mBranch Load (0.1ms)[0m   [0;1mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 2 AND "branches".major = 1) LIMIT 1[0m
+  [4;35;1mBranch Create (0.1ms)[0m   [0mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-11 15:23:16', '2010-03-11 15:23:16', 1, 2)[0m
+  [4;36;1mWidget Load (0.2ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;35;1mBranch Load (0.3ms)[0m   [0mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;36;1mWidget Create (0.2ms)[0m   [0;1mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-11 15:23:16', 'testing', '2010-03-11 15:23:16', 1, '1.1.0')[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM "branches" [0m
+  [4;36;1mWidget Load (0.1ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;36;1mBranch Load (0.1ms)[0m   [0;1mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;35;1mBranch Create (0.3ms)[0m   [0mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-11 15:23:16', '2010-03-11 15:23:16', 1, 1)[0m
+  [4;36;1mWidget Create (0.1ms)[0m   [0;1mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-11 15:23:16', 'testing', '2010-03-11 15:23:16', 1, '1.1.0')[0m
+  [4;35;1mBranch Load (0.3ms)[0m   [0mSELECT * FROM "branches" LIMIT 1[0m
+  [4;36;1mWidget Load (0.2ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1 ') LIMIT 1[0m
+  [4;35;1mWidget Load (0.1ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1') LIMIT 1[0m
+  [4;36;1mWidget Load (0.3ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.1') LIMIT 1[0m
+  [4;35;1mBranch Load (0.2ms)[0m   [0mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;36;1mBranch Load (0.2ms)[0m   [0;1mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;35;1mBranch Create (0.5ms)[0m   [0mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-11 15:25:28', '2010-03-11 15:25:28', 1, 1)[0m
+  [4;36;1mWidget Create (0.2ms)[0m   [0;1mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-11 15:25:28', NULL, '2010-03-11 15:25:28', 1, '1.1.1')[0m
+  [4;35;1mBranch Load (0.2ms)[0m   [0mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;36;1mBranch Create (0.3ms)[0m   [0;1mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-11 15:25:28', '2010-03-11 15:25:28', 1, 1)[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 2 AND "branches".major = 1) LIMIT 1[0m
+  [4;36;1mBranch Create (0.1ms)[0m   [0;1mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-11 15:25:28', '2010-03-11 15:25:28', 1, 2)[0m
+  [4;35;1mWidget Load (0.1ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;36;1mBranch Load (2.1ms)[0m   [0;1mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;35;1mWidget Create (0.2ms)[0m   [0mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-11 15:25:28', 'testing', '2010-03-11 15:25:28', 1, '1.1.0')[0m
+  [4;36;1mBranch Load (0.2ms)[0m   [0;1mSELECT * FROM "branches" [0m
+  [4;35;1mWidget Load (0.1ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;36;1mBranch Load (0.1ms)[0m   [0;1mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;35;1mBranch Load (0.2ms)[0m   [0mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;36;1mBranch Create (0.3ms)[0m   [0;1mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-11 15:25:28', '2010-03-11 15:25:28', 1, 1)[0m
+  [4;35;1mWidget Create (0.2ms)[0m   [0mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-11 15:25:28', 'testing', '2010-03-11 15:25:28', 1, '1.1.0')[0m
+  [4;36;1mBranch Load (0.3ms)[0m   [0;1mSELECT * FROM "branches" LIMIT 1[0m
+  [4;35;1mWidget Load (0.2ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1q') LIMIT 1[0m
+  [4;36;1mWidget Load (0.2ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1') LIMIT 1[0m
+  [4;36;1mWidget Load (0.3ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.1') LIMIT 1[0m
+  [4;35;1mBranch Load (0.2ms)[0m   [0mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;36;1mBranch Load (0.2ms)[0m   [0;1mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;35;1mBranch Create (0.4ms)[0m   [0mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-11 15:25:39', '2010-03-11 15:25:39', 1, 1)[0m
+  [4;36;1mWidget Create (0.2ms)[0m   [0;1mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-11 15:25:39', NULL, '2010-03-11 15:25:39', 1, '1.1.1')[0m
+  [4;35;1mBranch Load (0.2ms)[0m   [0mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;36;1mBranch Create (0.3ms)[0m   [0;1mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-11 15:25:39', '2010-03-11 15:25:39', 1, 1)[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 2 AND "branches".major = 1) LIMIT 1[0m
+  [4;36;1mBranch Create (0.1ms)[0m   [0;1mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-11 15:25:39', '2010-03-11 15:25:39', 1, 2)[0m
+  [4;35;1mWidget Load (0.1ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;36;1mBranch Load (0.3ms)[0m   [0;1mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;35;1mWidget Create (0.2ms)[0m   [0mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-11 15:25:39', 'testing', '2010-03-11 15:25:39', 1, '1.1.0')[0m
+  [4;36;1mBranch Load (0.1ms)[0m   [0;1mSELECT * FROM "branches" [0m
+  [4;35;1mWidget Load (0.1ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;36;1mBranch Load (0.1ms)[0m   [0;1mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;36;1mBranch Create (0.3ms)[0m   [0;1mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-11 15:25:39', '2010-03-11 15:25:39', 1, 1)[0m
+  [4;35;1mWidget Create (0.1ms)[0m   [0mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-11 15:25:39', 'testing', '2010-03-11 15:25:39', 1, '1.1.0')[0m
+  [4;36;1mBranch Load (0.2ms)[0m   [0;1mSELECT * FROM "branches" LIMIT 1[0m
+  [4;35;1mWidget Load (0.2ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1q') LIMIT 1[0m
+  [4;36;1mWidget Load (0.1ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1') LIMIT 1[0m
+  [4;36;1mWidget Load (19.9ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.1') LIMIT 1[0m
+  [4;35;1mBranch Load (0.2ms)[0m   [0mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;36;1mBranch Load (0.2ms)[0m   [0;1mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;35;1mBranch Create (12.7ms)[0m   [0mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-11 15:37:40', '2010-03-11 15:37:40', 1, 1)[0m
+  [4;36;1mWidget Create (0.2ms)[0m   [0;1mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-11 15:37:40', NULL, '2010-03-11 15:37:40', 1, '1.1.1')[0m
+  [4;35;1mBranch Load (0.2ms)[0m   [0mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;36;1mBranch Create (0.3ms)[0m   [0;1mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-11 15:37:40', '2010-03-11 15:37:40', 1, 1)[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 2 AND "branches".major = 1) LIMIT 1[0m
+  [4;36;1mBranch Create (0.1ms)[0m   [0;1mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-11 15:37:40', '2010-03-11 15:37:40', 1, 2)[0m
+  [4;35;1mWidget Load (0.1ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;36;1mBranch Load (0.3ms)[0m   [0;1mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;35;1mWidget Create (0.2ms)[0m   [0mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-11 15:37:40', 'testing', '2010-03-11 15:37:40', 1, '1.1.0')[0m
+  [4;36;1mBranch Load (0.2ms)[0m   [0;1mSELECT * FROM "branches" [0m
+  [4;35;1mWidget Load (0.1ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;36;1mBranch Load (0.1ms)[0m   [0;1mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;36;1mBranch Create (0.5ms)[0m   [0;1mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-11 15:37:40', '2010-03-11 15:37:40', 1, 1)[0m
+  [4;35;1mWidget Create (0.1ms)[0m   [0mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-11 15:37:40', 'testing', '2010-03-11 15:37:40', 1, '1.1.0')[0m
+  [4;36;1mBranch Load (0.3ms)[0m   [0;1mSELECT * FROM "branches" LIMIT 1[0m
+  [4;35;1mWidget Load (0.2ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1q') LIMIT 1[0m
+  [4;36;1mWidget Load (0.2ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1') LIMIT 1[0m
+  [4;36;1mWidget Load (0.4ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.1') LIMIT 1[0m
+  [4;35;1mBranch Load (0.2ms)[0m   [0mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;36;1mBranch Load (0.2ms)[0m   [0;1mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;35;1mBranch Create (0.5ms)[0m   [0mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:10:46', '2010-03-12 01:10:46', 1, 1)[0m
+  [4;36;1mWidget Create (0.2ms)[0m   [0;1mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-12 01:10:46', NULL, '2010-03-12 01:10:46', 1, '1.1.1')[0m
+  [4;35;1mBranch Load (0.2ms)[0m   [0mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;36;1mBranch Create (0.3ms)[0m   [0;1mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:10:46', '2010-03-12 01:10:46', 1, 1)[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 2 AND "branches".major = 1) LIMIT 1[0m
+  [4;36;1mBranch Create (0.1ms)[0m   [0;1mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:10:46', '2010-03-12 01:10:46', 1, 2)[0m
+  [4;35;1mWidget Load (0.1ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;36;1mBranch Load (0.4ms)[0m   [0;1mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;35;1mWidget Create (0.2ms)[0m   [0mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-12 01:10:46', 'testing', '2010-03-12 01:10:46', 1, '1.1.0')[0m
+  [4;36;1mBranch Load (0.2ms)[0m   [0;1mSELECT * FROM "branches" [0m
+  [4;35;1mWidget Load (0.1ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;36;1mBranch Load (0.2ms)[0m   [0;1mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;36;1mBranch Create (4.5ms)[0m   [0;1mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:10:46', '2010-03-12 01:10:46', 1, 1)[0m
+  [4;35;1mWidget Create (0.2ms)[0m   [0mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-12 01:10:46', 'testing', '2010-03-12 01:10:46', 1, '1.1.0')[0m
+  [4;36;1mBranch Load (0.3ms)[0m   [0;1mSELECT * FROM "branches" LIMIT 1[0m
+  [4;35;1mWidget Load (0.2ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1q') LIMIT 1[0m
+  [4;36;1mWidget Load (0.2ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1') LIMIT 1[0m
+  [4;36;1mWidget Load (0.3ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.1') LIMIT 1[0m
+  [4;35;1mBranch Load (0.2ms)[0m   [0mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;36;1mBranch Load (0.2ms)[0m   [0;1mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;35;1mBranch Create (12.4ms)[0m   [0mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:13:01', '2010-03-12 01:13:01', 1, 1)[0m
+  [4;36;1mWidget Create (0.2ms)[0m   [0;1mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-12 01:13:01', NULL, '2010-03-12 01:13:01', 1, '1.1.1')[0m
+  [4;35;1mBranch Load (0.2ms)[0m   [0mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;36;1mBranch Create (0.3ms)[0m   [0;1mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:13:01', '2010-03-12 01:13:01', 1, 1)[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 2 AND "branches".major = 1) LIMIT 1[0m
+  [4;36;1mBranch Create (0.1ms)[0m   [0;1mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:13:01', '2010-03-12 01:13:01', 1, 2)[0m
+  [4;35;1mWidget Load (0.1ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;36;1mBranch Load (1.0ms)[0m   [0;1mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;35;1mWidget Create (0.2ms)[0m   [0mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-12 01:13:01', 'testing', '2010-03-12 01:13:01', 1, '1.1.0')[0m
+  [4;36;1mBranch Load (0.2ms)[0m   [0;1mSELECT * FROM "branches" [0m
+  [4;35;1mWidget Load (0.1ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;36;1mBranch Load (0.2ms)[0m   [0;1mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;36;1mBranch Create (18.4ms)[0m   [0;1mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:13:01', '2010-03-12 01:13:01', 1, 1)[0m
+  [4;35;1mWidget Create (0.2ms)[0m   [0mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-12 01:13:01', 'testing', '2010-03-12 01:13:01', 1, '1.1.0')[0m
+  [4;36;1mBranch Load (0.3ms)[0m   [0;1mSELECT * FROM "branches" LIMIT 1[0m
+  [4;35;1mWidget Load (0.2ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1q') LIMIT 1[0m
+  [4;36;1mWidget Load (0.2ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1') LIMIT 1[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM "branches" [0m
+  [4;36;1mWidget Load (0.2ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;36;1mBranch Load (0.1ms)[0m   [0;1mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;35;1mBranch Create (0.4ms)[0m   [0mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:13:01', '2010-03-12 01:13:01', 1, 1)[0m
+  [4;36;1mWidget Create (0.3ms)[0m   [0;1mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-12 01:13:01', 'testing', '2010-03-12 01:13:01', 1, '1.1.0')[0m
+  [4;35;1mWidget Destroy (0.1ms)[0m   [0mDELETE FROM "widgets" WHERE "id" = 1[0m
+  [4;36;1mBranch Load (0.7ms)[0m   [0;1mSELECT * FROM "branches" [0m
+  [4;36;1mWidget Load (0.3ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.1') LIMIT 1[0m
+  [4;35;1mBranch Load (0.2ms)[0m   [0mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;36;1mBranch Load (0.2ms)[0m   [0;1mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;35;1mBranch Create (0.5ms)[0m   [0mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:13:29', '2010-03-12 01:13:29', 1, 1)[0m
+  [4;36;1mWidget Create (0.2ms)[0m   [0;1mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-12 01:13:29', NULL, '2010-03-12 01:13:29', 1, '1.1.1')[0m
+  [4;35;1mBranch Load (0.3ms)[0m   [0mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;36;1mBranch Create (1.0ms)[0m   [0;1mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:13:29', '2010-03-12 01:13:29', 1, 1)[0m
+  [4;35;1mBranch Load (0.2ms)[0m   [0mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 2 AND "branches".major = 1) LIMIT 1[0m
+  [4;36;1mBranch Create (0.1ms)[0m   [0;1mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:13:29', '2010-03-12 01:13:29', 1, 2)[0m
+  [4;35;1mWidget Load (0.1ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;36;1mBranch Load (0.3ms)[0m   [0;1mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;35;1mWidget Create (0.1ms)[0m   [0mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-12 01:13:29', 'testing', '2010-03-12 01:13:29', 1, '1.1.0')[0m
+  [4;36;1mBranch Load (0.2ms)[0m   [0;1mSELECT * FROM "branches" [0m
+  [4;35;1mWidget Load (0.1ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;36;1mBranch Load (0.2ms)[0m   [0;1mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;36;1mBranch Create (0.4ms)[0m   [0;1mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:13:29', '2010-03-12 01:13:29', 1, 1)[0m
+  [4;35;1mWidget Create (0.2ms)[0m   [0mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-12 01:13:29', 'testing', '2010-03-12 01:13:29', 1, '1.1.0')[0m
+  [4;36;1mBranch Load (0.3ms)[0m   [0;1mSELECT * FROM "branches" LIMIT 1[0m
+  [4;35;1mWidget Load (0.2ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1q') LIMIT 1[0m
+  [4;36;1mWidget Load (1.4ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1') LIMIT 1[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM "branches" [0m
+  [4;36;1mWidget Load (0.1ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;36;1mBranch Load (0.1ms)[0m   [0;1mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;35;1mBranch Create (0.7ms)[0m   [0mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:13:29', '2010-03-12 01:13:29', 1, 1)[0m
+  [4;36;1mWidget Create (0.2ms)[0m   [0;1mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-12 01:13:29', 'testing', '2010-03-12 01:13:29', 1, '1.1.0')[0m
+  [4;35;1mWidget Destroy (0.2ms)[0m   [0mDELETE FROM "widgets" WHERE "id" = 1[0m
+  [4;36;1mWidget Load (0.1ms)[0m   [0;1mSELECT * FROM "widgets" WHERE ("widgets"."branch_id" = 1) [0m
+  [4;35;1mClient Load (0.6ms)[0m   [0mSELECT * FROM "clients" INNER JOIN "branches_clients" ON "clients".id = "branches_clients".client_id WHERE ("branches_clients".branch_id = 1 ) ORDER BY name ASC[0m
+  [4;36;1mBranch Destroy (0.1ms)[0m   [0;1mDELETE FROM "branches" WHERE "id" = 1[0m
+  [4;35;1mBranch Load (4.7ms)[0m   [0mSELECT * FROM "branches" [0m
+  [4;36;1mWidget Load (0.3ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;35;1mBranch Load (0.2ms)[0m   [0mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;36;1mBranch Load (0.2ms)[0m   [0;1mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;35;1mBranch Create (0.5ms)[0m   [0mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:16:35', '2010-03-12 01:16:35', 1, 1)[0m
+  [4;36;1mWidget Create (0.2ms)[0m   [0;1mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-12 01:16:35', 'testing', '2010-03-12 01:16:35', 1, '1.1.0')[0m
+  [4;35;1mWidget Load (0.1ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.1') LIMIT 1[0m
+  [4;36;1mBranch Load (0.3ms)[0m   [0;1mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;35;1mWidget Create (0.1ms)[0m   [0mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-12 01:16:35', 'testing', '2010-03-12 01:16:35', 1, '1.1.1')[0m
+  [4;36;1mBranch Load (0.6ms)[0m   [0;1mSELECT * FROM "branches" LIMIT 1[0m
+  [4;35;1mWidget Load (0.5ms)[0m   [0mSELECT * FROM "widgets" WHERE ("widgets".branch_id = 1) [0m
+  [4;36;1mWidget Load (0.2ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.1') LIMIT 1[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;36;1mBranch Load (0.1ms)[0m   [0;1mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;35;1mBranch Create (0.3ms)[0m   [0mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:16:35', '2010-03-12 01:16:35', 1, 1)[0m
+  [4;36;1mWidget Create (0.1ms)[0m   [0;1mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-12 01:16:35', NULL, '2010-03-12 01:16:35', 1, '1.1.1')[0m
+  [4;35;1mBranch Load (0.2ms)[0m   [0mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;36;1mBranch Create (0.7ms)[0m   [0;1mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:16:35', '2010-03-12 01:16:35', 1, 1)[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 2 AND "branches".major = 1) LIMIT 1[0m
+  [4;36;1mBranch Create (0.1ms)[0m   [0;1mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:16:35', '2010-03-12 01:16:35', 1, 2)[0m
+  [4;35;1mWidget Load (0.2ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;36;1mBranch Load (0.3ms)[0m   [0;1mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;35;1mWidget Create (0.2ms)[0m   [0mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-12 01:16:35', 'testing', '2010-03-12 01:16:35', 1, '1.1.0')[0m
+  [4;36;1mBranch Load (0.2ms)[0m   [0;1mSELECT * FROM "branches" [0m
+  [4;35;1mWidget Load (0.7ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;36;1mBranch Load (0.1ms)[0m   [0;1mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;35;1mBranch Load (0.2ms)[0m   [0mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;36;1mBranch Create (0.4ms)[0m   [0;1mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:16:35', '2010-03-12 01:16:35', 1, 1)[0m
+  [4;35;1mWidget Create (0.2ms)[0m   [0mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-12 01:16:35', 'testing', '2010-03-12 01:16:35', 1, '1.1.0')[0m
+  [4;36;1mBranch Load (0.3ms)[0m   [0;1mSELECT * FROM "branches" LIMIT 1[0m
+  [4;35;1mWidget Load (0.2ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1q') LIMIT 1[0m
+  [4;36;1mWidget Load (0.2ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1') LIMIT 1[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM "branches" [0m
+  [4;36;1mWidget Load (0.1ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;36;1mBranch Load (0.1ms)[0m   [0;1mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;35;1mBranch Create (0.6ms)[0m   [0mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:16:35', '2010-03-12 01:16:35', 1, 1)[0m
+  [4;36;1mWidget Create (0.2ms)[0m   [0;1mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-12 01:16:35', 'testing', '2010-03-12 01:16:35', 1, '1.1.0')[0m
+  [4;35;1mWidget Destroy (0.1ms)[0m   [0mDELETE FROM "widgets" WHERE "id" = 1[0m
+  [4;36;1mWidget Load (0.1ms)[0m   [0;1mSELECT * FROM "widgets" WHERE ("widgets"."branch_id" = 1) [0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" INNER JOIN "branches_clients" ON "clients".id = "branches_clients".client_id WHERE ("branches_clients".branch_id = 1 ) ORDER BY name ASC[0m
+  [4;36;1mBranch Destroy (0.1ms)[0m   [0;1mDELETE FROM "branches" WHERE "id" = 1[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM "branches" [0m
+  [4;36;1mWidget Load (0.3ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;35;1mBranch Load (0.2ms)[0m   [0mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;36;1mBranch Load (0.2ms)[0m   [0;1mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;35;1mBranch Create (0.6ms)[0m   [0mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:16:48', '2010-03-12 01:16:48', 1, 1)[0m
+  [4;36;1mWidget Create (0.2ms)[0m   [0;1mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-12 01:16:48', 'testing', '2010-03-12 01:16:48', 1, '1.1.0')[0m
+  [4;35;1mWidget Load (0.2ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.1') LIMIT 1[0m
+  [4;36;1mBranch Load (0.3ms)[0m   [0;1mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;35;1mWidget Create (1.0ms)[0m   [0mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-12 01:16:48', 'testing', '2010-03-12 01:16:48', 1, '1.1.1')[0m
+  [4;36;1mBranch Load (0.3ms)[0m   [0;1mSELECT * FROM "branches" LIMIT 1[0m
+  [4;35;1mWidget Load (0.5ms)[0m   [0mSELECT * FROM "widgets" WHERE ("widgets".branch_id = 1) ORDER BY version ASC LIMIT 1[0m
+  [4;36;1mWidget Load (0.3ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.1') LIMIT 1[0m
+  [4;35;1mBranch Load (0.2ms)[0m   [0mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;36;1mBranch Load (0.1ms)[0m   [0;1mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;35;1mBranch Create (0.5ms)[0m   [0mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:16:49', '2010-03-12 01:16:49', 1, 1)[0m
+  [4;36;1mWidget Create (0.2ms)[0m   [0;1mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-12 01:16:49', NULL, '2010-03-12 01:16:49', 1, '1.1.1')[0m
+  [4;35;1mBranch Load (0.2ms)[0m   [0mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;36;1mBranch Create (0.3ms)[0m   [0;1mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:16:49', '2010-03-12 01:16:49', 1, 1)[0m
+  [4;35;1mBranch Load (0.2ms)[0m   [0mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 2 AND "branches".major = 1) LIMIT 1[0m
+  [4;36;1mBranch Create (0.1ms)[0m   [0;1mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:16:49', '2010-03-12 01:16:49', 1, 2)[0m
+  [4;35;1mWidget Load (0.2ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;36;1mBranch Load (0.3ms)[0m   [0;1mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;35;1mWidget Create (0.2ms)[0m   [0mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-12 01:16:49', 'testing', '2010-03-12 01:16:49', 1, '1.1.0')[0m
+  [4;36;1mBranch Load (0.2ms)[0m   [0;1mSELECT * FROM "branches" [0m
+  [4;35;1mWidget Load (0.1ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;36;1mBranch Load (0.3ms)[0m   [0;1mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;36;1mBranch Create (0.4ms)[0m   [0;1mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:16:49', '2010-03-12 01:16:49', 1, 1)[0m
+  [4;35;1mWidget Create (0.1ms)[0m   [0mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-12 01:16:49', 'testing', '2010-03-12 01:16:49', 1, '1.1.0')[0m
+  [4;36;1mBranch Load (0.8ms)[0m   [0;1mSELECT * FROM "branches" LIMIT 1[0m
+  [4;35;1mWidget Load (0.2ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1q') LIMIT 1[0m
+  [4;36;1mWidget Load (0.2ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1') LIMIT 1[0m
+  [4;35;1mBranch Load (0.2ms)[0m   [0mSELECT * FROM "branches" [0m
+  [4;36;1mWidget Load (0.1ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;35;1mBranch Load (0.3ms)[0m   [0mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;36;1mBranch Load (0.1ms)[0m   [0;1mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;35;1mBranch Create (0.4ms)[0m   [0mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:16:49', '2010-03-12 01:16:49', 1, 1)[0m
+  [4;36;1mWidget Create (0.2ms)[0m   [0;1mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-12 01:16:49', 'testing', '2010-03-12 01:16:49', 1, '1.1.0')[0m
+  [4;35;1mWidget Destroy (0.1ms)[0m   [0mDELETE FROM "widgets" WHERE "id" = 1[0m
+  [4;36;1mWidget Load (0.1ms)[0m   [0;1mSELECT * FROM "widgets" WHERE ("widgets"."branch_id" = 1) [0m
+  [4;35;1mClient Load (0.4ms)[0m   [0mSELECT * FROM "clients" INNER JOIN "branches_clients" ON "clients".id = "branches_clients".client_id WHERE ("branches_clients".branch_id = 1 ) ORDER BY name ASC[0m
+  [4;36;1mBranch Destroy (0.1ms)[0m   [0;1mDELETE FROM "branches" WHERE "id" = 1[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM "branches" [0m
+  [4;36;1mWidget Load (0.3ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;35;1mBranch Load (0.2ms)[0m   [0mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;36;1mBranch Load (0.3ms)[0m   [0;1mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;35;1mBranch Create (0.4ms)[0m   [0mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:17:06', '2010-03-12 01:17:06', 1, 1)[0m
+  [4;36;1mWidget Create (0.2ms)[0m   [0;1mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-12 01:17:06', 'testing', '2010-03-12 01:17:06', 1, '1.1.0')[0m
+  [4;35;1mWidget Load (0.1ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.1') LIMIT 1[0m
+  [4;36;1mBranch Load (0.3ms)[0m   [0;1mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;35;1mWidget Create (0.2ms)[0m   [0mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-12 01:17:06', 'testing', '2010-03-12 01:17:06', 1, '1.1.1')[0m
+  [4;36;1mBranch Load (0.8ms)[0m   [0;1mSELECT * FROM "branches" LIMIT 1[0m
+  [4;35;1mWidget Load (0.3ms)[0m   [0mSELECT * FROM "widgets" WHERE ("widgets".branch_id = 1) ORDER BY version DESC LIMIT 1[0m
+  [4;36;1mWidget Load (0.2ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.1') LIMIT 1[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;36;1mBranch Load (0.2ms)[0m   [0;1mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;35;1mBranch Create (0.3ms)[0m   [0mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:17:06', '2010-03-12 01:17:06', 1, 1)[0m
+  [4;36;1mWidget Create (0.2ms)[0m   [0;1mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-12 01:17:06', NULL, '2010-03-12 01:17:06', 1, '1.1.1')[0m
+  [4;35;1mBranch Load (0.2ms)[0m   [0mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;36;1mBranch Create (0.5ms)[0m   [0;1mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:17:06', '2010-03-12 01:17:06', 1, 1)[0m
+  [4;35;1mBranch Load (0.2ms)[0m   [0mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 2 AND "branches".major = 1) LIMIT 1[0m
+  [4;36;1mBranch Create (0.1ms)[0m   [0;1mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:17:06', '2010-03-12 01:17:06', 1, 2)[0m
+  [4;35;1mWidget Load (0.1ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;36;1mBranch Load (0.3ms)[0m   [0;1mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;35;1mWidget Create (0.1ms)[0m   [0mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-12 01:17:06', 'testing', '2010-03-12 01:17:06', 1, '1.1.0')[0m
+  [4;36;1mBranch Load (0.2ms)[0m   [0;1mSELECT * FROM "branches" [0m
+  [4;35;1mWidget Load (0.1ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;36;1mBranch Load (0.1ms)[0m   [0;1mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;36;1mBranch Create (0.4ms)[0m   [0;1mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:17:06', '2010-03-12 01:17:06', 1, 1)[0m
+  [4;35;1mWidget Create (0.2ms)[0m   [0mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-12 01:17:06', 'testing', '2010-03-12 01:17:06', 1, '1.1.0')[0m
+  [4;36;1mBranch Load (0.3ms)[0m   [0;1mSELECT * FROM "branches" LIMIT 1[0m
+  [4;35;1mWidget Load (0.2ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1q') LIMIT 1[0m
+  [4;36;1mWidget Load (0.2ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1') LIMIT 1[0m
+  [4;35;1mBranch Load (0.2ms)[0m   [0mSELECT * FROM "branches" [0m
+  [4;36;1mWidget Load (0.1ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;36;1mBranch Load (0.1ms)[0m   [0;1mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;35;1mBranch Create (0.4ms)[0m   [0mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:17:06', '2010-03-12 01:17:06', 1, 1)[0m
+  [4;36;1mWidget Create (0.2ms)[0m   [0;1mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-12 01:17:06', 'testing', '2010-03-12 01:17:06', 1, '1.1.0')[0m
+  [4;35;1mWidget Destroy (0.1ms)[0m   [0mDELETE FROM "widgets" WHERE "id" = 1[0m
+  [4;36;1mWidget Load (0.1ms)[0m   [0;1mSELECT * FROM "widgets" WHERE ("widgets"."branch_id" = 1) [0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" INNER JOIN "branches_clients" ON "clients".id = "branches_clients".client_id WHERE ("branches_clients".branch_id = 1 ) ORDER BY name ASC[0m
+  [4;36;1mBranch Destroy (0.1ms)[0m   [0;1mDELETE FROM "branches" WHERE "id" = 1[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM "branches" [0m
+  [4;36;1mWidget Load (0.3ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;35;1mBranch Load (0.3ms)[0m   [0mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;36;1mBranch Load (0.2ms)[0m   [0;1mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;35;1mBranch Create (0.5ms)[0m   [0mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:19:34', '2010-03-12 01:19:34', 1, 1)[0m
+  [4;36;1mWidget Create (0.2ms)[0m   [0;1mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-12 01:19:34', 'testing', '2010-03-12 01:19:34', 1, '1.1.0')[0m
+  [4;35;1mWidget Load (0.2ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.1') LIMIT 1[0m
+  [4;36;1mBranch Load (0.3ms)[0m   [0;1mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;35;1mWidget Create (4.2ms)[0m   [0mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-12 01:19:34', 'testing', '2010-03-12 01:19:34', 1, '1.1.1')[0m
+  [4;36;1mBranch Load (0.3ms)[0m   [0;1mSELECT * FROM "branches" LIMIT 1[0m
+  [4;35;1mWidget Load (0.3ms)[0m   [0mSELECT * FROM "widgets" WHERE ("widgets".branch_id = 1) ORDER BY version DESC LIMIT 1[0m
+  [4;36;1mWidget Load (0.2ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.1') LIMIT 1[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;36;1mBranch Load (0.1ms)[0m   [0;1mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;35;1mBranch Create (0.4ms)[0m   [0mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:19:34', '2010-03-12 01:19:34', 1, 1)[0m
+  [4;36;1mWidget Create (0.2ms)[0m   [0;1mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-12 01:19:34', NULL, '2010-03-12 01:19:34', 1, '1.1.1')[0m
+  [4;35;1mBranch Load (0.2ms)[0m   [0mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;36;1mBranch Create (0.3ms)[0m   [0;1mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:19:34', '2010-03-12 01:19:34', 1, 1)[0m
+  [4;35;1mBranch Load (0.2ms)[0m   [0mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 2 AND "branches".major = 1) LIMIT 1[0m
+  [4;36;1mBranch Create (0.1ms)[0m   [0;1mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:19:34', '2010-03-12 01:19:34', 1, 2)[0m
+  [4;35;1mWidget Load (0.1ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;36;1mBranch Load (0.3ms)[0m   [0;1mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;35;1mWidget Create (0.1ms)[0m   [0mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-12 01:19:34', 'testing', '2010-03-12 01:19:34', 1, '1.1.0')[0m
+  [4;36;1mBranch Load (0.2ms)[0m   [0;1mSELECT * FROM "branches" [0m
+  [4;35;1mWidget Load (0.2ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;36;1mBranch Load (0.1ms)[0m   [0;1mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;36;1mBranch Create (0.3ms)[0m   [0;1mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:19:34', '2010-03-12 01:19:34', 1, 1)[0m
+  [4;35;1mWidget Create (0.2ms)[0m   [0mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-12 01:19:34', 'testing', '2010-03-12 01:19:34', 1, '1.1.0')[0m
+  [4;36;1mBranch Load (0.3ms)[0m   [0;1mSELECT * FROM "branches" LIMIT 1[0m
+  [4;35;1mWidget Load (0.2ms)[0m   [0mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1q') LIMIT 1[0m
+  [4;36;1mWidget Load (0.2ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1') LIMIT 1[0m
+  [4;35;1mBranch Load (0.2ms)[0m   [0mSELECT * FROM "branches" [0m
+  [4;36;1mWidget Load (0.1ms)[0m   [0;1mSELECT "widgets".id FROM "widgets" WHERE ("widgets"."version" = '1.1.0') LIMIT 1[0m
+  [4;35;1mBranch Load (0.2ms)[0m   [0mSELECT * FROM "branches" WHERE ("branches"."major" = '1' AND "branches"."minor" = '1') LIMIT 1[0m
+  [4;36;1mBranch Load (0.1ms)[0m   [0;1mSELECT "branches".id FROM "branches" WHERE ("branches"."minor" = 1 AND "branches".major = 1) LIMIT 1[0m
+  [4;35;1mBranch Create (0.6ms)[0m   [0mINSERT INTO "branches" ("created_at", "updated_at", "major", "minor") VALUES('2010-03-12 01:19:34', '2010-03-12 01:19:34', 1, 1)[0m
+  [4;36;1mWidget Create (0.2ms)[0m   [0;1mINSERT INTO "widgets" ("created_at", "notes", "updated_at", "branch_id", "version") VALUES('2010-03-12 01:19:34', 'testing', '2010-03-12 01:19:34', 1, '1.1.0')[0m
+  [4;35;1mWidget Destroy (0.1ms)[0m   [0mDELETE FROM "widgets" WHERE "id" = 1[0m
+  [4;36;1mWidget Load (0.1ms)[0m   [0;1mSELECT * FROM "widgets" WHERE ("widgets"."branch_id" = 1) [0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" INNER JOIN "branches_clients" ON "clients".id = "branches_clients".client_id WHERE ("branches_clients".branch_id = 1 ) ORDER BY name ASC[0m
+  [4;36;1mBranch Destroy (0.1ms)[0m   [0;1mDELETE FROM "branches" WHERE "id" = 1[0m
+  [4;35;1mBranch Load (0.1ms)[0m   [0mSELECT * FROM "branches" [0m

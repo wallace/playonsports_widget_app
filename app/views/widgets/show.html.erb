@@ -1,0 +1,12 @@
+<p>
+  <b>Version:</b>
+  <%=h @widget.version %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%=h @widget.notes %>
+</p>
+
+<%= link_to 'Edit', edit_widget_path(@widget) %> |
+<%= link_to 'Back', widgets_path %>
